@@ -6,14 +6,14 @@
 
 <title>Mahalakshmi Arthi</title>
 
-<link rel="preconnect" hreflink rel="preconnect.com
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700=swap
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;lay=swap
 
 <style>
 
 :root{
     --navy:#0B1F3A;
-    --navy-light:#15345f;
     --blue:#2563EB;
     --charcoal:#161B22;
     --grey:#9CA3AF;
@@ -33,6 +33,7 @@ html{
 body{
     font-family:'Inter',sans-serif;
     color:white;
+    min-height:100vh;
     overflow-x:hidden;
 
     background:
@@ -55,10 +56,11 @@ body{
 /* NAVBAR */
 
 nav{
+    width:100%;
+    padding:30px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:32px 8%;
 }
 
 .logo{
@@ -67,50 +69,53 @@ nav{
     letter-spacing:3px;
 }
 
-nav a{
-    text-decoration:none;
-    color:#D7DFEC;
-    margin-left:24px;
-    font-size:14px;
-    transition:.3s;
+.nav-links{
+    display:flex;
+    gap:24px;
 }
 
-nav a:hover{
+.nav-links a{
+    color:#d5ddeb;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.nav-links a:hover{
     color:white;
 }
 
 /* HERO */
 
 .hero{
-    min-height:85vh;
+    min-height:80vh;
     display:flex;
     align-items:center;
     padding:0 8%;
 }
 
 .hero-content{
-    max-width:760px;
+    max-width:750px;
 }
 
 .eyebrow{
-    color:#92A6C8;
-    font-size:14px;
+    color:#94A3B8;
     letter-spacing:2px;
     text-transform:uppercase;
-    margin-bottom:24px;
+    font-size:14px;
+    margin-bottom:20px;
 }
 
 h1{
     font-size:6rem;
-    line-height:0.92;
+    line-height:0.95;
+    margin-bottom:25px;
     font-weight:800;
-    margin-bottom:24px;
 }
 
 .description{
     font-size:1.15rem;
     line-height:1.9;
-    color:#D4DCE8;
+    color:#D1D5DB;
     max-width:650px;
 }
 
@@ -123,10 +128,10 @@ h1{
 
 .btn{
     text-decoration:none;
-    padding:14px 28px;
+    padding:14px 30px;
     border-radius:999px;
     font-weight:600;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .btn-primary{
@@ -151,56 +156,60 @@ h1{
 /* CERTIFICATIONS */
 
 .certifications{
-    padding:60px 8%;
+    padding:40px 8%;
 }
 
 .certifications p{
-    color:#B9C5D8;
-    font-size:15px;
+    color:#BDC8D9;
 }
 
 /* FOCUS */
 
 .focus{
-    padding:0 8% 100px;
+    padding:40px 8% 100px;
 }
 
 .focus h2{
-    font-size:2.2rem;
+    font-size:2rem;
     margin-bottom:20px;
 }
 
 .focus p{
-    max-width:800px;
-    line-height:1.9;
-    color:#D4DCE8;
     font-size:1.05rem;
+    line-height:1.9;
+    color:#D1D5DB;
+    max-width:800px;
 }
 
 /* FOOTER */
 
 footer{
-    padding:40px;
     text-align:center;
-    color:#8D99AA;
-    font-size:14px;
+    padding:40px;
+    color:#8F9BB1;
 }
+
+/* MOBILE */
 
 @media(max-width:900px){
 
-h1{
-    font-size:3.5rem;
-}
+    h1{
+        font-size:3.5rem;
+    }
 
-.description{
-    font-size:1rem;
-}
+    .description{
+        font-size:1rem;
+    }
 
-nav{
-    flex-direction:column;
-    gap:15px;
-}
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
 
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 }
 
 </style>
@@ -214,8 +223,9 @@ nav{
 MAHALAKSHMI ARTHI
 </div>
 
-<div>
-<a href="#focus">Focus</a>
+<div class="nav-links">
+<aocus
+<a hreft
 </div>
 
 </nav>
@@ -235,12 +245,16 @@ Architecture.
 </h1>
 
 <p class="description">
-Analytics and planning consultant with 6+ years of experience delivering enterprise reporting, planning, and data solutions. Certified in SAP Analytics Cloud and SAP Business Data Cloud, with a growing focus on Data Engineering, Cloud Architecture, Databricks, Azure, and AI-powered analytics platforms.
+Analytics and planning consultant with 6+ years of experience delivering enterprise reporting, planning and data solutions. Certified in SAP Analytics Cloud and SAP Business Data Cloud with a growing focus on Data Engineering, Azure, Databricks, Cloud Architecture and AI-powered analytics platforms.
 </p>
 
 <div class="buttons">
 
-<a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btnnload>
+.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-primary">
+LinkedIn
+</a>
+
+" download class="btn btn-secondary">
 Resume
 </a>
 
@@ -263,7 +277,7 @@ SAP Analytics Cloud Certified • SAP Business Data Cloud Certified
 <h2>Current Focus</h2>
 
 <p>
-Building expertise in Data & AI Architecture, Azure platform services, Databricks, modern data engineering practices, analytics modernization, and enterprise intelligence platforms while continuing to deliver SAP Analytics Cloud and SAP Datasphere solutions.
+Building expertise in Data & AI Architecture, Azure platform services, Databricks, enterprise data engineering, analytics modernization and business intelligence strategy while continuing to deliver SAP Analytics Cloud and SAP Datasphere solutions.
 </p>
 
 </section>
@@ -274,4 +288,3 @@ Building expertise in Data & AI Architecture, Azure platform services, Databrick
 
 </body>
 </html>
-``
