@@ -6,235 +6,137 @@
 
 <title>Mahalakshmi Arthi</title>
 
-https://fonts.googleapis.com
-https://fonts.gstatic.com
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;lay=swap
-
 <style>
-
-:root{
-    --navy:#0B1F3A;
-    --blue:#2563EB;
-    --charcoal:#161B22;
-    --grey:#9CA3AF;
-    --white:#F8FAFC;
-}
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
-    font-family:'Inter',sans-serif;
-    color:white;
+    font-family:Segoe UI, Arial, sans-serif;
     min-height:100vh;
-    overflow-x:hidden;
+    color:white;
 
     background:
-    radial-gradient(circle at 15% 20%,
-    rgba(37,99,235,.25),
-    transparent 35%),
-
-    radial-gradient(circle at 85% 75%,
-    rgba(255,255,255,.06),
-    transparent 25%),
-
-    linear-gradient(
-    135deg,
-    #0B1F3A 0%,
-    #11294B 50%,
-    #161B22 100%
-    );
+    radial-gradient(circle at 20% 20%, rgba(37,99,235,.25), transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,.05), transparent 25%),
+    linear-gradient(135deg,#0B1F3A,#123B6B,#161B22);
 }
 
-/* NAVBAR */
-
 nav{
-    width:100%;
     padding:30px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
 }
 
 .logo{
     font-size:14px;
-    font-weight:700;
+    font-weight:bold;
     letter-spacing:3px;
 }
 
-.nav-links{
-    display:flex;
-    gap:24px;
-}
-
-.nav-links a{
-    color:#d5ddeb;
-    text-decoration:none;
-    font-size:14px;
-}
-
-.nav-links a:hover{
-    color:white;
-}
-
-/* HERO */
-
 .hero{
-    min-height:80vh;
+    min-height:75vh;
     display:flex;
     align-items:center;
     padding:0 8%;
 }
 
-.hero-content{
-    max-width:750px;
+.content{
+    max-width:800px;
 }
 
-.eyebrow{
-    color:#94A3B8;
+.tag{
+    color:#B8C5DB;
+    font-size:14px;
     letter-spacing:2px;
     text-transform:uppercase;
-    font-size:14px;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 h1{
     font-size:6rem;
-    line-height:0.95;
-    margin-bottom:25px;
-    font-weight:800;
+    line-height:.95;
+    margin-bottom:30px;
 }
 
 .description{
-    font-size:1.15rem;
-    line-height:1.9;
+    max-width:700px;
+    line-height:1.8;
     color:#D1D5DB;
-    max-width:650px;
+    font-size:1.1rem;
 }
 
 .buttons{
-    display:flex;
-    gap:16px;
     margin-top:40px;
-    flex-wrap:wrap;
 }
 
-.btn{
-    text-decoration:none;
-    padding:14px 30px;
+.button{
+    display:inline-block;
+    padding:14px 26px;
     border-radius:999px;
+    text-decoration:none;
     font-weight:600;
-    transition:0.3s;
+    margin-right:12px;
 }
 
-.btn-primary{
+.linkedin{
     background:#2563EB;
     color:white;
 }
 
-.btn-primary:hover{
-    transform:translateY(-2px);
-}
-
-.btn-secondary{
+.resume{
     background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
     color:white;
+    border:1px solid rgba(255,255,255,.15);
 }
-
-.btn-secondary:hover{
-    background:rgba(255,255,255,.12);
-}
-
-/* CERTIFICATIONS */
-
-.certifications{
-    padding:40px 8%;
-}
-
-.certifications p{
-    color:#BDC8D9;
-}
-
-/* FOCUS */
 
 .focus{
-    padding:40px 8% 100px;
+    padding:0 8% 100px;
 }
 
 .focus h2{
-    font-size:2rem;
     margin-bottom:20px;
 }
 
 .focus p{
-    font-size:1.05rem;
-    line-height:1.9;
-    color:#D1D5DB;
     max-width:800px;
+    line-height:1.8;
+    color:#D1D5DB;
 }
-
-/* FOOTER */
 
 footer{
     text-align:center;
     padding:40px;
-    color:#8F9BB1;
+    color:#9CA3AF;
 }
 
-/* MOBILE */
-
-@media(max-width:900px){
+@media (max-width:768px){
 
     h1{
         font-size:3.5rem;
     }
 
-    .description{
-        font-size:1rem;
-    }
-
-    nav{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
+    .button{
+        display:block;
+        width:fit-content;
+        margin-bottom:12px;
     }
 }
-
 </style>
+
 </head>
 
 <body>
 
 <nav>
-
-<div class="logo">
-MAHALAKSHMI ARTHI
-</div>
-
-<div class="nav-links">
-<aocus
-<a hreft
-</div>
-
+<div class="logo">MAHALAKSHMI ARTHI</div>
 </nav>
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="content">
 
-<div class="eyebrow">
+<div class="tag">
 SAP Analytics Cloud • SAP Datasphere • Business Data Cloud
 </div>
 
@@ -245,16 +147,16 @@ Architecture.
 </h1>
 
 <p class="description">
-Analytics and planning consultant with 6+ years of experience delivering enterprise reporting, planning and data solutions. Certified in SAP Analytics Cloud and SAP Business Data Cloud with a growing focus on Data Engineering, Azure, Databricks, Cloud Architecture and AI-powered analytics platforms.
+Analytics and planning consultant with 6+ years of experience delivering enterprise reporting, planning and data solutions. Certified in SAP Analytics Cloud and SAP Business Data Cloud with a growing focus on Data Engineering, Azure, Databricks, Cloud Architecture and AI-powered analytics.
 </p>
 
 <div class="buttons">
 
-.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-primary">
+https://www.linkedin.com
 LinkedIn
 </a>
 
-" download class="btn btn-secondary">
+resume.pdf
 Resume
 </a>
 
@@ -264,15 +166,7 @@ Resume
 
 </section>
 
-<section class="certifications">
-
-<p>
-SAP Analytics Cloud Certified • SAP Business Data Cloud Certified
-</p>
-
-</section>
-
-<section class="focus" id="focus">
+<section class="focus">
 
 <h2>Current Focus</h2>
 
@@ -282,7 +176,7 @@ Building expertise in Data & AI Architecture, Azure platform services, Databrick
 
 </section>
 
-<footer id="contact">
+<footer>
 © 2026 Mahalakshmi Arthi
 </footer>
 
